@@ -4,12 +4,12 @@ katz_deli = []
 def line(array)
   line_status_string = "The line is currently:"
   if array == []
-    puts "The line is currently empty."
+    "The line is currently empty."
   elsif array != []
     array.each_with_index {|person, place_number|
       line_status_string += " #{place_number+1}. #{person}"
     }
-    puts line_status_string
+    line_status_string
   end
 end
 
@@ -18,9 +18,9 @@ def take_a_number(array, name)
   call = ""
   if array == []
     array.push(name)
-    puts "Welcome, #{array[0]}. You are number #{array.length} in line."
+    "Welcome, #{array[0]}. You are number #{array.length} in line."
   elsif array != []
     array.push(name)
-    puts "Welcome, #{array.last}. You are number #{array.length} in line."
+    "Welcome, #{array.last}. You are number #{array.length} in line."
   end
 end
