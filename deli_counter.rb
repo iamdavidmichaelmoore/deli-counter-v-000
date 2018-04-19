@@ -15,7 +15,6 @@ end
 
 #takes status of line and person's name, then announces their place in line
 def take_a_number(array, name)
-  call = ""
   if array == []
     array.push(name)
     puts "Welcome, #{array[0]}. You are number #{array.length} in line."
@@ -24,3 +23,5 @@ def take_a_number(array, name)
     puts "Welcome, #{array.last}. You are number #{array.length} in line."
   end
 end
+
+def now_serving(array)
