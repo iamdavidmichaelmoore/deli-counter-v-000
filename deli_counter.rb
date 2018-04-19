@@ -12,6 +12,6 @@ def line
   end
 end
 
-def take_a_number(line, name)
-  update_line = line.push(name)
-  puts
+#def take_a_number(line, name)
+#  update_line = line.push(name)
+#  puts
