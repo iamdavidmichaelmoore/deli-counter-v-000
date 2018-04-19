@@ -15,12 +15,14 @@ end
 
 #takes status of line and person's name, then announces their place in line
 def take_a_number(array, name)
+  call = ""
   if array == []
     array.push(name)
-    #index_to_place_number = array.length + 1
-    #puts "Welcome, #{name}. You are number #{}"
-    array.each_with_index {|person, place_number|
-      puts "Welcome, #{person}. You are number #{place_number+1} in line."
-    }
-  update_line = line.push(name)
-  puts
+    puts "Welcome, #{array[0]}. You are number #{array.length + 1} in line."
+  elsif array != []
+    array.push(name)
+    puts "Welcome, #{array.last}. You are number #{array.length + 1} in line."
+  end
+end
+    
+    
