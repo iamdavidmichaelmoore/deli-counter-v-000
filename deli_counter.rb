@@ -5,7 +5,7 @@ def line(array)
   if array == []
     puts "The line is currently empty."
   elsif array != []
-    katz_deli.each_with_index{|person, place_number|
+    array.each_with_index{|person, place_number|
         line_status_string += "#{place_number+1}. #{person}"
     }
     puts line_status_string
