@@ -24,12 +24,11 @@ def take_a_number(array, name)
   end
 end
 
+#takes the status of the line and announces the first person in line
 def now_serving(array)
   if array == []
     puts "There is nobody waiting to be served!"
   elsif array != []
-    puts "Current serving #{array.first}."
-    array.pop 
+    puts "Current serving #{array.shift}."
   end
 end
-    
