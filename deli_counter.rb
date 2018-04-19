@@ -24,5 +24,3 @@ def take_a_number(array, name)
     puts "Welcome, #{array.last}. You are number #{array.length + 1} in line."
   end
 end
-    
-    
